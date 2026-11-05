@@ -1,10 +1,9 @@
-n = int(input())
-
-for row in range(1, n + 1):
-    for col in range(1, n + 1):
-        (row * col) % 10
-        print((row * col) % 10, end="")
-    # TODO: add an inner loop over the columns 1..n.
-    # Print each cell's digit without ending the line,
-    # and let the print() below close the row.
-    print()
+text = input()
+if len(text) < 2:
+# TODO: build a new string whose first and last characters are swapped,
+# with every character between them left where it is.
+# Remember that a very short string has nothing to swap.
+  result = text
+else:
+  result = text[-1] + text[1:-1] + text[0]
+print(result)
