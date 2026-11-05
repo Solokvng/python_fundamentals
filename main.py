@@ -1,11 +1,9 @@
-score = int(input())
-if score >= 90:
-    print("A")
-elif score >= 80:
-    print("B")
-elif score >= 70:
-    print("C")
-elif score >= 60:
-    print("D")
+year = int(input())
+
+# One boolean expression over `year` goes here.
+is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+if is_leap:
+    print("leap")
 else:
-    print("F")
+    print("not leap")
