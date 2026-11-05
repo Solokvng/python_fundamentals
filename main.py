@@ -1,8 +1,10 @@
-total = 0
-number = int(input()) # 1. Grab the first number
+n = int(input())
 
-while number != 0:     # 2. Keep going as long as it's not 0
-    total += number    # 3. Add it to the total
-    number = int(input()) # 4. Grab the next number to check
-
-print(total)
+for row in range(1, n + 1):
+    for col in range(1, n + 1):
+        (row * col) % 10
+        print((row * col) % 10, end="")
+    # TODO: add an inner loop over the columns 1..n.
+    # Print each cell's digit without ending the line,
+    # and let the print() below close the row.
+    print()
