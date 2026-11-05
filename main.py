@@ -1,9 +1,8 @@
-n = int(input())
+total = 0
+number = int(input()) # 1. Grab the first number
 
-for multiplier in range(1, 11):
-  print(f"{n} x {multiplier} = {n * multiplier}") 
+while number != 0:     # 2. Keep going as long as it's not 0
+    total += number    # 3. Add it to the total
+    number = int(input()) # 4. Grab the next number to check
 
-
-# TODO: print the ten lines of the table for n, one line per product.
-# Loop over the numbers 1 through 10 and build each line with an f-string.
-# Nothing is printed yet, so every test fails until you add the loop.
+print(total)
