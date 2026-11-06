@@ -1,12 +1,11 @@
-title = input()
+item = input()
+qty = int(input())
+price = float(input())
 
-# 1. Keep only letters, digits, and spaces, then join them back into a string
-clean_text = "".join([char for char in title if char.isalnum() or char.isspace()])
+total = qty * price
 
-# 2. Lowercase the text and split it into a list of words (this automatically cleans up extra spaces)
-words = clean_text.lower().split()
-
-# 3. Join the words together using a single hyphen
-slug = "-".join(words)
-
-print(slug)
+# TODO: put the values into these three lines with f-strings.
+# The total must show exactly two digits after the decimal point.
+print(f"Item: {item}")
+print(f"Quantity: {qty}")
+print(f"Total: ${total:.2f}")
